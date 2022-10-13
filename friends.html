@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script language="JavaScript" src="js/task_unfold.js"></script>
+    <script language="JavaScript" src="js/mail.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- <link rel="stylesheet" href="css/reset.css"/> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Briefing - Kokoatalk</title>
+    
+</head>
+
+<body>
+    <!--status-bar-->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>no service</span>
+            <span><i class="fas fa-wifi"></i></span>
+        </div>
+        <div class="status-bar__column">
+            <span>11:11</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <span><i class="fa-solid fa-battery-full fa-lg"></i></span>
+            <span><i class="fas fa-bolt"></i></span>
+        </div>
+    </div>
+    <!--메인화면 시작-->
+    <div id="screen-division">
+
+        <!--왼쪽 메뉴바-->
+        <section class="service-menu">
+            <p class="service-menu__home"><i class="fa-solid fa-building-user"></i>홈</p>
+            <details class="service-menu__user">
+                <summary><i class="fa-solid fa-user"></i>사용자 관리</summary>
+            </details>
+            <details class="service-menu__mail">
+                <summary><i class="fa-solid fa-envelopes-bulk"></i>메일 관리<i class="fas fa-chevron-down fa-xs"></i></summary>
+                <div class="service-menu__mail__contents">
+                <p>공용메일 관리</p>
+                <p>그룹메일 관리</p>
+                <p>메일 사용 현황</p>
+                <p>잠금 편지함 사용 현황</p>
+                <p>오피스 용량 사용 현황</p>
+                <p>스팸메일 관리</p>
+            </div>
+            </details>
+            <details class="service-menu__team">
+                <summary><i class="fa-solid fa-people-group"></i>회사 팀관리<i class="fas fa-chevron-down fa-xs"></i></summary>
+                <div class="service-menu__team__contents">
+                <p>마케팅 팀</p>
+                <p>인사 팀</p>
+                <p>연구개발 팀</p>
+            </div>
+            </details>
+            <details class="service-menu__sec-mail">
+                <summary><i class="fa-solid fa-lock"></i>보안 메일</summary>
+            </details>
+        </section>
+
+
+        <!--오른쪽 Briefing-->
+        <section class="screen-right">
+            <header class="screen-header">
+                <h1 class="screen-header__title">Briefing
+                </h1>
+                <div class="screen-header__icons">
+                    <span>
+                        <i class="fas fa-search fa-lg"></i>
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-bell fa-lg"></i>
+                    </span>
+
+                    <span>
+                        <i class="fas fa-cog fa-lg"></i>
+
+                    </span>
+
+                </div>
+            </header>
+
+            <!----------task------------->
+
+            <div class="tasks">
+                Today's Task
+                <i class="fas fa-chevron-down fa-xs"></i>
+            </div>
+            <div class='tasks-board'>
+                <ul class="tasks-board-list">
+                    <li>
+                        <div><i class="fa-solid fa-desktop fa-2x"></i></div><div>Task1</div>
+                    </li>
+                    <li>
+                        <div><i class="fa-solid fa-desktop fa-2x"></i></div><div>Task2</div>
+                    </li>
+                    <li>
+                        <div><i class="fa-solid fa-desktop fa-2x"></i></div><div>Task3</div>
+                    </li>
+                    <li>
+                        <div><i class="fa-solid fa-desktop fa-2x"></i></div><div>Task4</div>
+                    </li>
+                    <li>
+                        <div><i class="fa-solid fa-desktop fa-2x"></i></div><div>Task5</div>
+                    </li>
+                    <li>
+                        <div><i class="fa-solid fa-desktop fa-2x"></i></div><div>Task6</div>
+                    </li>
+                    <li>
+                        <div><i class="fa-solid fa-desktop fa-2x"></i></div><div>Task7</div>
+                    </li>
+                    <li>
+                        <div><i class="fa-solid fa-desktop fa-2x"></i></div><div>Task8</div>
+                    </li>
+                    <li>
+                        <div><i class="fa-solid fa-desktop fa-2x"></i></div><div>Task9</div>
+                    </li>
+                    <li>
+                        <div><i class="fa-solid fa-desktop fa-2x"></i></div><div>Task10</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-----------friends------------->
+
+            <main class="friends-screen">
+                <div class="user-component user-me">
+                    <div class="user-component__column">
+                        <img 
+                        class="user-component__avatar user-component__avatar--xl" 
+                        src="november.jpeg" alt="">
+                        <div class="user-component__text">
+                            <h4 class="user-component__title">fluorjo</h4>
+                            <h6 class="user-component__subtitle">퇴근 휴가 퇴사 </h6>
+                        </div>
+                    </div>
+                    <div class="user-component__column">
+                        <i class="fa-solid fa-desktop fa-2x"></i>
+                        Task1
+                    </div>
+                    <!-- <div class="user-component__column">
+            <i class="fa-solid fa-person-circle-exclamation fa-2x"></i>
+            Task1
+        </div> -->
+                </div>
+
+                <!--------------------------mail-------------------->
+                <div class="friends-screen__mail">
+                    <div class="friends-screen__channel-header mail">
+
+                        <i class="fa-solid fa-envelope-open-text fa-1x">
+                           <span>Mail</span> 
+                        </i>
+
+                    </div>
+                    <div class='mail-board'>
+                        <ul class="mail-board-list">
+                            <li>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>Mail 1
+                            </li>
+                            <li>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>Mail 2
+                            </li>
+                            <li>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>Mail 3
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope-open"></i>Mail 4
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope-open"></i>Mail 5
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            
+                
+                <!--친구목록-->
+                <details class="friends-screen__marketing">
+                    <summary class="friends-screen__marketing-header">
+                        <span>마케팅팀</span>
+                        <i class="fas fa-chevron-down fa-xs"></i>
+                    </summary>
+                    <p>
+                        <div class="user-component">
+                            <div class="user-component__column">
+                              <img
+                                src="ma.png"
+                                class="user-component__avatar user-component__avatar--sm"
+                              />
+                              <div class="user-component__text">
+                                <h4 class="user-component__title user-component__title--not-bold">
+                                  마부장
+                                </h4>
+                              </div>
+                            </div>
+                            <div class="user-component__column">
+                                <i class="fa-solid fa-desktop fa-2x"></i>
+                                Task3
+                            </div>
+                        </div>
+                    </p>
+
+                    <p>
+                        <div class="user-component">
+                            <div class="user-component__column">
+                              <img
+                                src="car.jpg"
+                                class="user-component__avatar user-component__avatar--sm"
+                              />
+                              <div class="user-component__text">
+                                <h4 class="user-component__title user-component__title--not-bold">
+                                  차차장
+                                </h4>
+                              </div>
+                            </div>
+                            <div class="user-component__column">
+                                <i class="fa-solid fa-desktop fa-2x"></i>
+                                Task3
+                            </div>
+                          </div>
+                    </p>
+                    <p>
+                        <div class="user-component">
+                            <div class="user-component__column">
+                              <img
+                                src="november.jpeg"
+                                class="user-component__avatar user-component__avatar--sm"
+                              />
+                              <div class="user-component__text">
+                                <h4 class="user-component__title user-component__title--not-bold">
+                                  곽대리
+                                </h4>
+                              </div>
+                            </div>
+                            <div class="user-component__column">
+                                <i class="fa-solid fa-desktop fa-2x"></i>
+                                Task4
+                            </div>
+                          </div>
+                    </p>
+                </details>
+
+                <details class="friends-screen__insa">
+                    <summary class="friends-screen__insa-header">
+                        <span>인사팀</span>
+                        <i class="fas fa-chevron-down fa-xs"></i>
+                    </summary>
+                    <p>
+                        <div class="user-component">
+                            <div class="user-component__column">
+                              <img
+                                src="november.jpeg"
+                                class="user-component__avatar user-component__avatar--sm"
+                              />
+                              <div class="user-component__text">
+                                <h4 class="user-component__title user-component__title--not-bold">
+                                  나야나
+                                </h4>
+                              </div>
+                            </div>
+                            <div class="user-component__column">
+                                <i class="fa-solid fa-desktop fa-2x"></i>
+                                Task7
+                            </div>
+                          </div>
+                    </p>
+                </details>
+
+            </main>
+
+        </section>
+
+    </div>
+
+
+
+
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <!--ul라고 해도 됨-->
+            <li class="nav__btn">
+                <!--li라고 해도 됨-->
+                <a class="nav__link" href="friends.html">
+                    <i class="fa-solid fa-user fa-2x"></i>
+                </a>
+            </li>
+
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification badge">1</span>
+                    <i class="fa-regular fa-comment fa-2x"></i>
+                </a>
+            </li>
+
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html">
+                    <i class="fas fa-search fa-2x"></i>
+                </a>
+            </li>
+
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <i class="fa-solid fa-ellipsis fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--맨 처음 애니메이션-->
+   <!-- <div id="splash-screen">
+        <div id="bg">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+
+        <div id="bg2">
+            <div class="square" id="sq1"></div>
+            <div class="square" id="sq2"></div>
+            <div class="square" id="sq3"></div>
+            <div class="square" id="sq4"></div>
+            <div class="square" id="sq5"></div>
+        </div>
+    </div> -->
+
+
+
+
+    <script src="https://kit.fontawesome.com/29233b525a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
