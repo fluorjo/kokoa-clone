@@ -1,4 +1,5 @@
 div {
+
     width: 355px;
     height: 230px;
     background-color: #1F2937;
@@ -79,4 +80,15 @@ div {
     border-top: 1px solid white;
     border-radius: 0;
 
+}
+
+body{
+    height: 100vh;
+}
+.idcard{
+    position:absolute;
+    top: 40%;
+    left: 20%;
+
+    
 }

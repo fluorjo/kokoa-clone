@@ -1,6 +1,5 @@
 @import "search-bar.css";
 body{
-  background-color: wheat;
   display: flex;
   flex-direction: column; 
 }
@@ -11,11 +10,22 @@ body{font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen
 
 /*상단 바 */
 .upper-bar{
-  margin-left: 20px;
+  background-color: yellow;
+  position: fixed;
+  z-index: 100;
   display: flex;
-  /* justify-content: space-between; */
   justify-content: center;
-  
+
+    top:0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 30px 25px 15px 25px;
+}
 }
 .upper-bar__column{
   width: 33%;
@@ -91,7 +101,7 @@ h4{
 .button-bar{
   position: relative;
   left: 30px;
-  top: 200px;
+  top: 280px;
 
   display: flex;
   justify-content: center;
@@ -184,7 +194,8 @@ box-shadow: 5px 5px;
 }
 
 .songlist__songicon1{
-  background-color: black;border-radius:20px;
+  border-radius:20px;
+
   width: 100px;
   height: 100px;
   margin-right: 20px;
@@ -192,21 +203,22 @@ box-shadow: 5px 5px;
 }
 
 #songlist__songicon2{
-  background-color: rgb(140, 24, 144);border-radius:20px;
+  border-radius:20px;
   width: 100px;
   height: 100px;
   margin-right: 20px;
   border: 1px solid;
 }
 #songlist__songicon3{
-  background-color: rgb(176, 112, 21);border-radius:20px;
+  border-radius:20px;
+
   width: 100px;
   height: 100px;
   margin-right: 20px;
   border: 1px solid;
 }
 #songlist__songicon4{
-  background-color: rgb(11, 231, 255);border-radius:20px;
+  border-radius:20px;
   width: 100px;
   height: 100px;
   margin-right: 20px;
@@ -223,5 +235,10 @@ box-shadow: 5px 5px;
   display:flex;
   align-items:center;
   justify-content: center;
+
+}
+
+.task_img{
+  border-radius:20px;
 
 }
